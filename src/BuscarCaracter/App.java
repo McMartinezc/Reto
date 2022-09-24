@@ -16,6 +16,8 @@ public class App {
         boolean encontrado =false;
 
         while(( i < paraula.length()) && (encontrado == false)) {
+            //indexOf devuelve la posición de la primera aparición de los caracteres especificados en una cadena
+            //lasIndexOf devuelve la posición de la última aparición de los caracteres especificados en una cadena
             if (paraula.indexOf(paraula.charAt(i)) != paraula.lastIndexOf(paraula.charAt(i))) {
                 System.out.println("La primera lletra repetida es: " + paraula.charAt(i));
                 encontrado = true;
